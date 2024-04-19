@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@layer components {
+  .body_container {
+    @apply w-full min-h-full px-8 md:px-12 lg:px-16 py-10
+  }
+  .bg_style {
+    @apply bg-center bg-cover
+  }
+  .header_typography {
+    @apply text-3xl lg:text-6xl leading-normal lg:leading-normal font-[800] text-[#1B442A]
+  }
+  .nav {
+    @apply font-thin text-[16px] text-[#202020] 
+  }
+  .col_Layout {
+    @apply relative text-center md:text-left items-center md:items-start justify-center flex flex-col 
+  }
+  .logo {
+    @apply w-32 md:w-40 lg:w-48 object-contain
+  }
+  .listing {
+    @apply list-none;
+  }
+  .justifyFlex {
+    @apply flex justify-between items-center
+  }
+  .flexSpread {
+    @apply flex items-center
+  }
+
+  .buttons {
+    @apply rounded-full cursor-pointer bg-[#1B442A] text-[#FFFFFF] border border-[#1B442A] px-4 py-2 font-light hover:text-[#1B442A] hover:bg-[#F4B23E] hover:border-[#F4B23E]
+  }
+
+  .mobileMenu {
+    @apply flex flex-col gap-3 items-start py-8 absolute w-full left-10 font-thin text-[12px]
+  }
+  .padding {
+    @apply sm:px-16 px-8 sm:py-24 py-12;
+  }
+
+  .padding-x {
+    @apply sm:px-16 px-8;
+  }
+
+  .padding-y {
+    @apply sm:py-24 py-12;
+  }
+
+  .padding-l {
+    @apply sm:pl-16 pl-8;
+  }
+
+  .padding-r {
+    @apply sm:pr-16 pr-8;
+  }
+
+  .padding-t {
+    @apply sm:pt-24 pt-12;
+  }
+
+  .padding-b {
+    @apply sm:pb-24 pb-12;
+  }
+
+  .info-text {
+    @apply text-[#202020] text-base leading-7 font-light py-6;
+  }
+
+  .images {
+    @apply object-contain 
+  }
+ 
+}

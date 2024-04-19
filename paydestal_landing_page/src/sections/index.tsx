@@ -1,0 +1,8 @@
+export {default as Developer }from "../sections/Developer"
+export {default as FAQs }from "../sections/FAQs"
+export {default as Footer }from "../sections/Footer"
+export {default as Hero} from "../sections/Hero"
+export {default as Menubar }from "../sections/Menubar"
+export {default as Services} from "../sections/Services"
+export {default as WhyUs} from "../sections/WhyUs"
+export {default as GetStarted} from "../sections/GetStarted"
